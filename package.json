@@ -1,0 +1,11 @@
+{
+  "name": "broswer-assets-load",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "samhwang1990@gmail.com",
+  "license": "NOLICENSED",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-send": "^3.3.0"
+  }
+}
