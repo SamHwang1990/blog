@@ -30,7 +30,7 @@ app.use(async (ctx, next) => {
     return await send(ctx, isVendor[1], { root: 'node_modules' });
   }
 
-  await next();
+  return await next();
 });
 
 // simple static server
@@ -45,7 +45,8 @@ app.use(async (ctx, next) => {
   if (isAssets != null) {
     return await send(ctx, isAssets[1], { root: 'assets' });
   }
-  await next();
+
+  return await next();
 });
 
 // html static server
